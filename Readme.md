@@ -1,5 +1,7 @@
 # Day 1 - Introduction
 
+![alt text](image.png)
+
 Use JS in html
 - Script tag
 
