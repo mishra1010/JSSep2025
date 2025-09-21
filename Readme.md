@@ -75,3 +75,41 @@ JS performs the following for each line of code -
 ![alt text](image-10.png)
 
 Everything we write in JS gets converted to AST.
+
+# Day 3 - Logic building first steps - Operators and Expressions
+
+// Operator - + - * / % ++ --
+
+// Comparison Operator - == (only checks value) === (strict equality - checks type) != !== > < >= <=
+
+// Logical Operator - && || !
+
+// Bitwise Operator - & | ^ ~ << >> >>>
+
+// Ternary Operator - condition ? true : false
+
+// Assignment Operator - = += -= *= /= %=
+
+// String Operator - +, +=
+
+![alt text](image-11.png)
+
+coalescing operator - first value is returned if it is not null or undefined, else second value is returned
+
+Bitwise Operator
+
+![alt text](image-12.png)
+
+
+![alt text](image-13.png)
+
+![alt text](image-14.png)
+
+Relational Operator - in, instanceof
+
+Grouping - takes higher precedence in BODMAS
+
+console.log((p + q) * r)
+
+typeof - returns the data type in JS
+
