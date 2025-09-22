@@ -113,3 +113,31 @@ console.log((p + q) * r)
 
 typeof - returns the data type in JS
 
+# Day 4 - Control flow in JS
+
+Control flow of execution rather than line by line. We needto control the flow by using if, if-else, switch-case, break, continue
+
+![alt text](image-15.png)
+
+if-else is not suitable for more cases and we use switch case for multiple cases.
+
+![alt text](image-16.png)
+
+above - no case matches, hence use default
+
+default:
+    console.log("Nothing is matched")
+
+If-else is sequential but in switch JS forms a table and directly goes to the matching case. So, it is performance efficient.
+
+complex logical conditions - If-else is the way and if some basic matches to be done its switch case
+
+Ternary case - 
+![alt text](image-18.png)
+
+Example
+![alt text](image-17.png)
+
+Answer is - All these are in India and then break gets executed
+
+# Day 5 - Lpps and Iterations in JS
