@@ -1,6 +1,6 @@
 # Day 1 - Introduction
 
-![alt text](image.png)
+![alt text](attachments/image.png)
 
 Use JS in html
 - Script tag preferred with js file
@@ -15,7 +15,7 @@ For this we add script tag at the end of body in html or we can use async (used 
 
 # Day 2 - Variables
 
-![variables](image-1.png)
+![variables](attachments/image-1.png)
 
 specifiers - control the scope of variables and how many times it can be changed. 
 
@@ -29,26 +29,26 @@ let fruit = "mango"
 
 = assignment operator
 
-![reassign](image-2.png)
+![reassign](attachments/image-2.png)
 
 reassign variable has the new value
 
 Value Assignment
 
 Pass by value
-![alt text](image-3.png)
+![alt text](attachments/image-3.png)
 
 Primitive (pass by value) data types - num, string, boolean, undefined, null, BigInt, Symbol
 
-![pass by value](image-4.png)
+![pass by value](attachments/image-4.png)
 
 Non-primitive data types - function, array, object
 
 Rules for naming variables -
 
-![variables](image-5.png)
+![variables](attachments/image-5.png)
 
-![standards](image-6.png)
+![standards](attachments/image-6.png)
 
 var: Function-scoped, can be redeclared (not recommended)
 
@@ -60,19 +60,19 @@ Declare variables only once and assign value multiple times based on use case.
 
 Primitive variables are stored in stack and non-primitive in heap. Each location has an address with with the item in stack can get the value from heap by pointing to the address. 
 
-![stackheap](image-7.png)
+![stackheap](attachments/image-7.png)
 
 JS performs the following for each line of code -
 
 - Tokenizing - Break line in to pieces/tokens to validate grammar of JS. 
-![alt text](image-8.png)
+![alt text](attachments/image-8.png)
 
 - Parsing - Tree structure with Abstract syntax tree with all the tokens where in each node tokens will be there and definitions
-![alt text](image-9.png)
+![alt text](attachments/image-9.png)
 
 - Interpreting - Machine learning code
 
-![alt text](image-10.png)
+![alt text](attachments/image-10.png)
 
 Everything we write in JS gets converted to AST.
 
@@ -92,18 +92,18 @@ Everything we write in JS gets converted to AST.
 
 // String Operator - +, +=
 
-![alt text](image-11.png)
+![alt text](attachments/image-11.png)
 
 coalescing operator - first value is returned if it is not null or undefined, else second value is returned
 
 Bitwise Operator
 
-![alt text](image-12.png)
+![alt text](attachments/image-12.png)
 
 
-![alt text](image-13.png)
+![alt text](attachments/image-13.png)
 
-![alt text](image-14.png)
+![alt text](attachments/image-14.png)
 
 Relational Operator - in, instanceof
 
@@ -117,11 +117,11 @@ typeof - returns the data type in JS
 
 Control flow of execution rather than line by line. We needto control the flow by using if, if-else, switch-case, break, continue
 
-![alt text](image-15.png)
+![alt text](attachments/image-15.png)
 
 if-else is not suitable for more cases and we use switch case for multiple cases.
 
-![alt text](image-16.png)
+![alt text](attachments/image-16.png)
 
 above - no case matches, hence use default
 
@@ -133,10 +133,10 @@ If-else is sequential but in switch JS forms a table and directly goes to the ma
 complex logical conditions - If-else is the way and if some basic matches to be done its switch case
 
 Ternary case - 
-![alt text](image-18.png)
+![alt text](attachments/image-18.png)
 
 Example
-![alt text](image-17.png)
+![alt text](attachments/image-17.png)
 
 Answer is - All these are in India and then break gets executed
 
@@ -144,7 +144,7 @@ Answer is - All these are in India and then break gets executed
 
 for, break, continue, while (do not kow in advance how many timesloop will execute)
 
-![alt text](image-19.png)
+![alt text](attachments/image-19.png)
 
 Single dimension - 1D for loop
 
@@ -153,24 +153,24 @@ Multi dimension - ND (Nested loop)
 break and continue - break breaks a loop and continue moves to the next by skipping current execution
 
 While
-![alt text](image-20.png)
+![alt text](attachments/image-20.png)
 
 do-while
 loop runs atleast once before doing condition check
 
-![alt text](image-21.png)
+![alt text](attachments/image-21.png)
 
 Infinite loop - avoid this as this never terminates
-![alt text](image-22.png)
+![alt text](attachments/image-22.png)
 
 # Day 6 - Functions in JS
 
-![alt text](image-23.png)
+![alt text](attachments/image-23.png)
 
 We will not cover
 
-![alt text](image-24.png)
+![alt text](attachments/image-24.png)
 
 Lines of code which are repeated in execution of code can be made as functions and then called to execute them
 
-![alt text](image-25.png)
+![alt text](attachments/image-25.png)
