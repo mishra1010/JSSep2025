@@ -140,4 +140,37 @@ Example
 
 Answer is - All these are in India and then break gets executed
 
-# Day 5 - Lpps and Iterations in JS
+# Day 5 - Loops and Iterations in JS
+
+for, break, continue, while (do not kow in advance how many timesloop will execute)
+
+![alt text](image-19.png)
+
+Single dimension - 1D for loop
+
+Multi dimension - ND (Nested loop)
+
+break and continue - break breaks a loop and continue moves to the next by skipping current execution
+
+While
+![alt text](image-20.png)
+
+do-while
+loop runs atleast once before doing condition check
+
+![alt text](image-21.png)
+
+Infinite loop - avoid this as this never terminates
+![alt text](image-22.png)
+
+# Day 6 - Functions in JS
+
+![alt text](image-23.png)
+
+We will not cover
+
+![alt text](image-24.png)
+
+Lines of code which are repeated in execution of code can be made as functions and then called to execute them
+
+![alt text](image-25.png)
