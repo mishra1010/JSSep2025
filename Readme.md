@@ -174,3 +174,80 @@ We will not cover
 Lines of code which are repeated in execution of code can be made as functions and then called to execute them
 
 ![alt text](attachments/image-25.png)
+
+Parameters - are placeholders for inputswhile declaring a function
+
+arguments - are the actual values which are passed during function execution
+
+return value from function to be used anywhere else in the program
+
+return
+result; - gives NAN
+
+console.log will give undefined for the result operations
+
+Default parameter
+![alt text](attachments/image26.png)
+
+if we do not give a default value, then b's value is NAN and result output will be undefined.
+
+Rest Parameter
+
+![alt text](attachments/image27.png)
+
+Rest is always at the end, cannot be at first or midddle.
+
+Nested Function - This is a step towards learning closure
+
+Outer Fun -> Inner Fun -> return Inner func when outer executes
+
+callback function - call me after sometime
+
+callback -> promise -> async
+
+Pure Function - useful in component driven architecture in React
+
+provides same output as log as we provide the same input. In cases we will provide the same argument but the output will differ because of certain external factors which makesthe function impure
+
+that means it depends on another variable for ex to get the outcome and if variablechanges the output willchange for same input each time. That is called side effect.
+
+Higher Order Function (HOF)
+
+Take another function as argument or return a function. Useful to create wrappers
+
+Ananymous Fn
+ Function with no name
+
+IIFE Fn
+Annonymous function which gets executed immediately without calling it. Plugin dev when browser loads, this function executes. ex- get a chatbot or get logo, open whatsapp
+
+Arrow Fn
+
+() =>({})
+
+CallStack - Datastructure of function execution
+
+![alt text](attachments/image28.png)
+
+Example with 3 functions
+
+This is simple one where each one gets executed in an order and then gets out of the stack
+
+![alt text](attachments/image-31.png)
+
+This one
+![alt text](attachments/image-29.png)
+
+f1,f2,f3
+
+first f1 gets executed and comes out, then f2 and then f3 - LIFO (stack)
+
+![alt text](attachments/image-30.png)
+
+Recursion - Function calling itself
+
+Why do we need this?
+
+It has a cost
+
+It needs to have a base or exit criteria - else max call stack size reached
