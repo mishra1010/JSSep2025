@@ -251,3 +251,21 @@ Why do we need this?
 It has a cost
 
 It needs to have a base or exit criteria - else max call stack size reached
+
+# Day 7 - Build JS projects
+
+Rock, Paper, Scissors Game develop
+
+Assumptions -
+
+1. Prompt user to get input
+
+2. computer's selection will be random
+
+3. Compare user and computers choice
+
+4. Announce the winner
+
+5. After winner announcement, we can ask the user to play again or quit the game
+
+
