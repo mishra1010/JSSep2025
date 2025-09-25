@@ -268,4 +268,87 @@ Assumptions -
 
 5. After winner announcement, we can ask the user to play again or quit the game
 
+# Module 2 - Day 8 - Execution Context and call stack
 
+Lexical env - how and where your code is placed, so that JS adheres to JS grammar and converts the code to 
+machine language
+
+fun x(){
+    var y ="xxx"
+}
+
+x();
+
+Placement of variable above
+
+Execution context - Code currently running is managed by JS execution context.
+
+![alt text](attachments/Execcontext.png)
+1. GEC -(ex- window is a global object, this keyword is there in global window object this === window)
+    Creation Phase
+        1. window object
+        2. thiskeyword
+        3. window === this
+        4. Allocate memory for variable name and function in this example
+        5. Name will be initialized by undefined
+        6. The function body will be placed directly into memory
+    Execution Phase
+        1. it will assign valueto variable name
+        2. function execution will not happen as its not called or invoked
+        3. When function is invoked,then we will get FEC - Function Exec context
+![alt text](attachments/funcexeccontext.png)
+
+Eample -
+
+![alt text](attachments/execcontextexample.png)
+    
+Memory structure
+
+1. Stack - primitive
+3. Heap - non-primitive
+
+For each of the code line - GEC gets created and so on
+![alt text](attachments/memstructure.png)
+
+Then stack gets cleared from top and garbage collection comes to picture
+
+Stack clearing
+![alt text](attachments/clearstack.png)
+
+Garbage collection
+![alt text](attachments/gcclear.png)
+
+Overall Memory execution
+
+![alt text](overallmemexecution.png)
+
+# Day 9 - Hoisting ad Temporal Dead Zone
+
+At exec time JS hoists variable name if it executes before the variable is declared.
+
+JS allocates memory in creation phase and hence value is nothing (undefined)
+![alt text](attachments/hoist.png)
+
+Var is not used for these reasons as we get confused when thevar is declared and when its used. So,we should use
+let or const
+
+With let we will get error - cannot access name before initialization. The variable gets created and is not initialized with any value as in case of var. ifit does not have any value or initialization we cannot use it in our program.
+
+With const also we will get error
+
+Temporal Dead Zone - Area where we cannot access a variable until it is initialized.
+
+![alt text](attachments/tdz.png)
+
+Function hoisting - phase where creating memory for your function is called function hoisting, creating memory for variable and initialization is called variable hoisting
+
+![alt text](attachments/functionhoistexec.png)
+
+For the following we will get error as here memory is created for avariable test
+
+![alt text](attachments/fnerror.png)
+
+//we will get type error - test is not a function
+//because test is undefined at the time of call
+//as var is hoisted but not the assignment  
+![alt text](attachments/fnexprerror.png)
