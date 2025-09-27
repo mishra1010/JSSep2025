@@ -352,3 +352,66 @@ For the following we will get error as here memory is created for avariable test
 //because test is undefined at the time of call
 //as var is hoisted but not the assignment  
 ![alt text](attachments/fnexprerror.png)
+
+# Day 10 - Scope and Scope Chain in JS
+
+Where a variable is accessible in JS determines the scope of variable. Following are types of scope in JS
+
+1. Global scope 2. Function Scope 3. Block Scope 4. Module Scope
+
+Global - if we declare variable with let, its not added as a property of the window object which is global. With var, it becomes a property of the window object. else let or var declared in global scope can be accessed everywhere
+
+Function scope - variables declared in a function can be accessed within the function and not outside
+
+Block Scope - for, switch, {} , variables declared with let and const cannot be accessed outside but var can be accessed outside
+
+var is function scoped but let and const are block scoped
+
+Scope chain - first JS checks variables at local level, then if it does not find, it goes out and checks above and similarly it checks to find any variables during execution
+
+![alt text](attachments/scopechain.png)
+
+Variable shadowing - its when a variable in inner scope has the same name as in outer scope, so it is shadowing or hiding the outer scope variable with the inner scope variable.
+
+JS prioritizes the variable in inner scope rather than in the outer scope
+
+![alt text](attachments/vardeclardetails.png)
+
+![alt text](attachments/vardeclardetails1.png)
+
+Var should not be used in loops or inside blocks asits accessible in the whole program. Hence, it can be reassigned which might cause bigger issues difficult to troubleshoot. So, let is the best way
+
+# Day 11 - Closure in JS
+
+To learn closure we should have good understanding of inner and outer functions, scope
+
+Vars declared in outer function can be accessed by inner function but vars declared in inner function cannot be accessed by outer function.
+
+Lexical scoping
+
+
+Closure - inner function has access to outer function's variables even after the outer function has returned
+Closure - combination of function and lexical environment within which that function was declared
+Closure - gives you access to an outer function's scope from an inner function
+Closure - created every time a function is created, at function creation time
+
+We can only return 1 function from a function and cannot return multiple functions. For such implementations to house multiple return for functions we would need to use objects, next session.
+
+closure always holds the reference of a variable declared in outer function. we should not use closure in case of big data as it can result in memory issues and performance.
+
+Example - closure always refers to the reference variable and hence this is not garbage collected,with time this can result in huge problems as memory is not cleaned up
+
+![alt text](attachments/closureissue.png)
+
+Advantages of closure -
+
+1. We can keep the variable private without exposing it
+
+2. we can stop variable pollution
+
+3. we can make a function factory method
+
+4. We can keep a variable alive in multiple calls as all closure have access to the outer function variable
+
+Lets see in a function timer, like we saw count, bank account before to see its effectiveness
+
