@@ -415,3 +415,29 @@ Advantages of closure -
 
 Lets see in a function timer, like we saw count, bank account before to see its effectiveness
 
+# Day 12 - Objects in JS
+
+![alt text](attachments/objectscoverage.png)
+
+key - value pair in JS. Declared with {}
+
+user.age, user.name
+
+user["is Admin]: true - use subscript for declaring special char vars. Same is used to retrieve
+
+delete user["is Admin] - used to delete theproperty from object
+
+Contructor object gives blue print for car, obnly object literal usedto give key and value
+
+Another way to declare object is using keyword Object
+
+Object - stored in heap as its non-primitive type, uses pass by reference
+
+Static methods in Objects
+
+Object Destructuring - instead of using object.property to get the value we can also use
+
+const {names, age, meal="bread"} = student - this does the same thing. we can also add a new property and add a default value in the declaration.
+
+# Day 13 - this in JS
+
