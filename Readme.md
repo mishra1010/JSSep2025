@@ -441,3 +441,37 @@ const {names, age, meal="bread"} = student - this does the same thing. we can al
 
 # Day 13 - this in JS
 
+Global Exec context - this keyword points to window object
+
+Outer function or inner function - this always refers to window function
+
+this in Object refers to the same object
+
+In strict mode - JS does not allow this keyword to refer to window object in a standalone function. The value of this will be undefined always for outer,inner or any other function.
+
+In arrow function this keyword is resolved by the lexical scope which is global and hence points to window object in strict mode
+
+strict mode is used to make JS adhere to JS rules for development and is generally used
+
+this keyword - in global scope, in standalone function, inside standalone function in strict mode, this keyword with implicit binding in object method, this keyword in arrow function,
+this keyword in arrow function that is in another function scope or object, this keyword with explicit binding - with call, apply, bind, this keyword with objectcreated with new keyword
+
+# Day 14 - Error Handling in JS
+
+![alt text](attachments/errorhandling.png)
+
+1. parsing error - due to grammar of js, needs to be fixed by fixing the grammar of code
+2. Runtime error - needs to be handled to give good experience to end user
+
+
+Handle errors with try and catch block
+
+try {
+    do something with logic and code
+} catch(error){
+    do something with the error
+}
+
+Rethrow - rethrow error from catch
+
+finally - always gets executed (cleanup actions)
