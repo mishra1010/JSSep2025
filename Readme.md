@@ -475,3 +475,11 @@ try {
 Rethrow - rethrow error from catch
 
 finally - always gets executed (cleanup actions)
+
+# Day 15 - Javascript Array 
+
+Rest - ... in left of operator in variables
+
+Spread - ... in right of operator in values
+
+
