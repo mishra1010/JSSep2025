@@ -482,4 +482,13 @@ Rest - ... in left of operator in variables
 
 Spread - ... in right of operator in values
 
+It is important in programing to manage data changes in an immutable way. That is to make a copy of it and not change the source.
+
+Static Methods - Array.From(), Array.fromAsync()
+
+Arraylike - Htmlcollections, arguments
+
+Iterator fuctions - Filter() - uses test function as argument, map() - uses transformation function as argument - both take callback functions
+
+reduce() - complex method - takes callback function and an optional initial value argument
 
