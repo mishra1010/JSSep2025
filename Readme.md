@@ -492,3 +492,44 @@ Iterator fuctions - Filter() - uses test function as argument, map() - uses tran
 
 reduce() - complex method - takes callback function and an optional initial value argument
 
+# Day 16 - Debugging with DevTools
+
+Why is my app not working. Fixing issues with available tools?
+
+1. Using console.log is used by many
+
+2. Breakpoint
+
+3. Programing is 60% debugging
+
+chrome devtools and vscode can be used to debug
+
+# Day 17 - Intro to DOM with JS projects
+
+
+Tree Structure 
+
+![alt text](attachments/DOM.png)
+
+DOM is not a component of JS. JS leverages this to generate dynamic content.
+
+DOM Types - Document, Node, Element, Nodelist, Attr, NameNodeMap
+
+document.head
+
+document.body
+
+![alt text](attachments/Domtypes.png)
+
+// Accessing DOM
+
+By id - document.getElementbyId("heading")
+
+By class - document.getElementByClassName("info")
+
+By tag Name - document.getElementByTagName("p")
+
+Byqueryselector - document.querySelector(cssSelector)
+
+document,querySelectorAll(cssSelector)
+
