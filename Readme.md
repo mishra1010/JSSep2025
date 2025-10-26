@@ -533,3 +533,29 @@ Byqueryselector - document.querySelector(cssSelector)
 
 document,querySelectorAll(cssSelector)
 
+
+# Day 18 - DOM Manipulations
+
+Create Elements
+
+Insert Elements
+
+Modify Content
+
+Removing Elements
+
+Read, Write and Remove Attributes
+
+Traversing/Navigating OM
+
+Manipulating Styles
+
+Manipulating Classes
+
+className is not a very fleible property to be used as if we have multiple classes in a div and if we want to change only one class, it would replace both with the new one. So, we need to check classList.
+
+Controlling Visibilities
+
+Build Projects
+
+Tasks
