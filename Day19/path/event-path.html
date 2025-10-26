@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling, Capturing, and Delegation</title>
+    <link rel="stylesheet" href="./event.css" />
+    <script src="event-path.js" defer></script>
+</head>
+<body>
+    <h1>Event Bubbling, Capturing, and Delegation</h1>
+    <div id="grandparent">
+        <div id="parent">
+            <button id="child">Click Me!</button>
+        </div>
+    </div>
+
+    <hr />
+    <h2>Event Delegation Example</h2>
+    <ul id="item-list">
+        <li class="item">Item 1 <button class="delete-btn">Delete</button></li>
+        <li class="item">Item 2 <button class="delete-btn">Delete</button></li>
+        <li class="item">Item 3 <button class="delete-btn">Delete</button></li>
+    </ul>
+
+    <hr />
+    <div id="father" style="padding:30px; background: #cfd8dc;">
+        Parent
+        <button id="son" style="margin:10px;">Click Me</button>
+    </div>
+
+</body>
+</html>

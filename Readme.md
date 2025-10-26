@@ -559,3 +559,32 @@ Controlling Visibilities
 Build Projects
 
 Tasks
+
+# Day 19 - Events in JS
+
+1. Event - Signal that something happened in the browser
+
+2. Event Handling and Why
+
+3. Event Handling in Markup
+
+4. addEventListener and removeEventListener
+
+5. DOM Content Loaded
+
+6. Event Object
+
+7. Event Capturing and Bubbling
+
+8. Event Delegation
+
+9. Event efault Behavior
+
+10. Custom Events
+
+11. Projects
+
+![alt text](attachments/Bubbleandcapture.png)
+
+By default bubbling phase is enabled and capture is disabled. We can enable capture phase if we want.
+
