@@ -588,3 +588,16 @@ Tasks
 
 By default bubbling phase is enabled and capture is disabled. We can enable capture phase if we want.
 
+# Day 20 - Advanced DOM Tricks
+
+Parent element
+
+sibling element
+
+child element
+
+Template - creates document fragment and can be cloned to use the same
+
+Documenty Fragment and Range - Not a part of the main DOM tree until we insert it, Acts like a temp container,
+Great for building chunks of DOM before adding them.
+
