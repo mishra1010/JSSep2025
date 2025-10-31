@@ -601,3 +601,12 @@ Template - creates document fragment and can be cloned to use the same
 Documenty Fragment and Range - Not a part of the main DOM tree until we insert it, Acts like a temp container,
 Great for building chunks of DOM before adding them.
 
+# Day 21 - Quiz App
+
+- Design
+
+- Develop with features
+
+- Gamification
+
+![alt text](attachments/quizapp.png)
