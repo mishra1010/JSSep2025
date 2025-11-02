@@ -610,3 +610,71 @@ Great for building chunks of DOM before adding them.
 - Gamification
 
 ![alt text](attachments/quizapp.png)
+
+# Day 22 - Callback with Asynchronousprogramming
+
+setTimeout() - waits for time passed before execution, helps with async programming
+
+callback - when we want to execute something before the execution of a function. The callback function helps in these cases by being called from another function.
+
+promises
+
+async/await keywords
+
+EventLoop
+
+# Day 23 - Promises in JS
+
+ What is a Promise in JS? - states of a promise. Online order, Whatsapp message, luggage belt in Airport
+
+    Pending - Initially when the executor function starts execution
+
+    Fulfilled - When the promise is resolved
+
+    Rejected - when promise is not fullfilled and rejected
+
+    Result - 
+
+        undefined - Initially when the state value is pending
+
+        value - when resolve(value) is called
+
+        error - when reject(error) is called
+
+        Promise uses an executor task to complete its task.
+         How to handle promises?
+
+ .then(), .catch() and .finally() are the ways to handle promises from the executor service as response
+
+ Callback to Promise
+
+ Understand Promise states
+
+ How Promises are resolved and rejected?
+
+ Handling Promises
+
+ Promise Chain -
+
+ Rule 1 - Every promise gives a .then() handler method. Every rejected promise provides a .catch() handler
+
+ Rule 2 - we can do 3 valuable things from the .then() method. We can return another promise(for async operation).
+ or return any other value from a synchronous operation. or throw an error.
+
+ Rule 3 - we can rethrow from the .catch() handler to handle the error later. In this case, the control will go to
+ the next closest .catch() handler
+
+ Rule 4 - Unlike .then() and .catch(), the .finally() handler does not process the result value or error. It just passes the result as is to the next handler.
+
+ Rule 5 - Calling the .then() handler method multiple times on a single promise is NOT chaining
+
+ Handling multiple Promises - promise.any, promise.all, promise.
+
+ How to Cancel a Promise
+
+ PizzaHub App
+
+ ![alt text](attachments/Promise.png)
+
+
+
