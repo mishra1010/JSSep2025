@@ -676,5 +676,34 @@ EventLoop
 
  ![alt text](attachments/Promise.png)
 
+ # Day 24 - Async and Await to simplify promises
+
+ Promises: What are the problems? - No issues, just the code structure and the number of lines of code is complex and also difficult
+ for devs and for debugging. So, we have async/wait
+
+ Promise to await
+
+ async helps in implicitly returning a promise if promise is not returned. In case, promise is returned explicitly then it will return the same and not return it in a promise wrapper. so, no more promise creation
+
+ after this to handle async, we can use .then and .catch based on how we used to handle promise but if we do not want to use .then and .catch then use await in the handle part
+
+ async function
+
+ async/await together
+
+ Does await make things synchronous
+
+ Error handling woth async/await
+
+ Project example
+
+ Top level await
+
+ Multiple async/await
+
+ PizzaHub example with async and await
+
+
+
 
 
