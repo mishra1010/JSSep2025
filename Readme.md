@@ -676,7 +676,7 @@ EventLoop
 
  ![alt text](attachments/Promise.png)
 
- # Day 24 - Async and Await to simplify promises
+ # Day 24 - Async and Await to simplify promises , last part pokemongo watch again
 
  Promises: What are the problems? - No issues, just the code structure and the number of lines of code is complex and also difficult
  for devs and for debugging. So, we have async/wait
@@ -693,7 +693,7 @@ EventLoop
 
  Does await make things synchronous
 
- Error handling woth async/await
+ Error handling with async/await
 
  Project example
 
@@ -702,6 +702,37 @@ EventLoop
  Multiple async/await
 
  PizzaHub example with async and await
+
+ async and await can be used with promises to optimize code as needed.
+
+ # Day 25 - Javascript fetch
+
+ What is fetch() API and syntax
+
+ HTTP Methods
+
+ fetch() usage: Getting Resources
+
+ fetch() usage: Query Params
+
+ fetch() usage: Creating Resource
+
+ fetch() Usage: Custom Headers
+
+ fetch() usage: Updating an Entire Resource
+
+ fetch() usage: Updating a part of the resource
+
+ fetch() usage: Deleting resource
+
+ Creating request object
+
+ Handling response
+
+ Handling Errors
+
+ Canceling a request
+ 
 
 
 
