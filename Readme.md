@@ -732,7 +732,22 @@ EventLoop
  Handling Errors
 
  Canceling a request
- 
+
+
+ # Day 26 - Common Mistakes with JS Promises and Async Code
+
+ Looping with Promises
+
+ do not use for loops to loop in case of fetch calls as it is synchronous. How to solve this problem of not getting data in order?
+
+ we can see if async await helps. Result seems good but is it the right way?
+
+ It seems that we are using async but when the await is used our program becomes synchronous till responses are received. Not that there would be nothing executed after the for loop, that executes as the main thread is not blocked but inside the loop it would be synchronous.
+ So, if we have 4 promises and want to hndle these concurrently and not worry about when each of the promises are getting settled, do not use for loop. Use promise.all or few other apis in JS
+
+
+
+
 
 
 
