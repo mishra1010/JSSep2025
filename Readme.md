@@ -316,11 +316,11 @@ Stack clearing
 ![alt text](attachments/clearstack.png)
 
 Garbage collection
-![alt text](attachments/gcclear.png)
+![alt text](attachments/gcclear.png.png)
 
 Overall Memory execution
 
-![alt text](overallmemexecution.png)
+![alt text](attachments/overallmemexecution.png)
 
 # Day 9 - Hoisting ad Temporal Dead Zone
 
@@ -745,11 +745,69 @@ EventLoop
  It seems that we are using async but when the await is used our program becomes synchronous till responses are received. Not that there would be nothing executed after the for loop, that executes as the main thread is not blocked but inside the loop it would be synchronous.
  So, if we have 4 promises and want to hndle these concurrently and not worry about when each of the promises are getting settled, do not use for loop. Use promise.all or few other apis in JS
 
+ # Day 27 - How your Async code works - Event Loop simlified
 
+ Asynchronous and single threaded
 
+ Event loop is most important in JS and has few mathematical formulas which would help in understanding. Pre-requisite for Event Loop -
 
+ 1. How JS function works
 
+ 2. How callback works
 
+ 3. How setTimeOut works andhow promises work
+
+ ![alt text](attachments/functionexecution.png)
+
+sequential execution
+
+![alt text](attachments/seqexecfn.png)
+
+little complex execution - synchronous scenario
+
+![alt text](attachments/syncexec.png)
+
+Javascript is synchronous. There can be async behaviors. With browser APIs/Web APIs - setTimeout, setInterval, With Promises, With Event Handlers. So, these all functions enter the call stack how would be the behavior as synchronous behavior of JS might freeze the UI. Event Loops help here along with call stack, web APIs, callback queue, microtask queue/job queue, event loop is the one which manages what to run next in the call stack
+
+architecture - Event loop iterates to check if call stack is empty and then checks the callback queue to pull the job to call stack so tht that function can get executed. callback is a function and call stack also is a function where callback function gets executed. Callback queue uses FIFO.
+
+![alt text](attachments/asyncarch.png)
+
+Browser APIs - temp storage for browser apis or web apis
+
+callback queue - temp storage for task, queue
+
+![alt text](attachments/settimeoutcallback.png)
+
+setTimeout is the only callback function here to be hndled
+
+![alt text](attachments/execution.png)
+
+main -> f2 -> f1
+
+f1 goes to callback queue nd setTimeout goes to browserAPI
+
+Example with promises - promises are also a callback as part of the handler fuction. Promise handler would be stored in the jobQ/Micro tasks queue
+
+![alt text](attachments/jobQ.png)
+
+Event Loop gives priority to Job Queue if we have callbacks available i callback queue and JobQ.
+
+What if there are multiple items in callback queue and multiple items in job queue? what happens?
+
+All jobs in jobQ get executed first and then callbackQ gets executed.
+
+![alt text](attachments/executionqueue1.png)
+
+main -> f2 -> i am a promise ->f1
+
+![alt text](attachments/executionqueue2.png)
+
+# Day 28 - Build a country app with Async JS and tailwindCSS
+
+We need to build the following project with the layout shown
+
+![alt text](attachments/image-26.png)
 
 
 
