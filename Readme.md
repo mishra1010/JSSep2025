@@ -809,5 +809,66 @@ We need to build the following project with the layout shown
 
 ![alt text](attachments/image-26.png)
 
+# Day 29 - Object Oriented Programing
+
+What are Objects? - has characteristics -> or properties or attributes or state
+
+Behaviors are methods or actions
+
+![alt text](attachments/object.png)
+
+![alt text](attachments/object1.png)
+
+What are Classes? - Blueprint - plan for creating something which is an object. here house is an object, basically its the design.
+
+![alt text](attachments/blueprint.png)
+
+What are Functions?
+
+How can you practically thik of Classes and Objects?
+
+What is OOP?
+
+Why OOP is important in Programming?
+
+Real-World use cases of OOP
+
+Five key OOP principles:
+    Abstraction - hide internal complexities of the system and show just what is needed. In this case remote. Similarly coffee machine, washing machine.
+    ![alt text](attachments/abstract.png)
+    - is abstrcted + is shown to user
+    ![alt text](attachments/abstract1.png)
+
+    Focus is on what an object does
+
+    Encapsulation - ATM machine - properties, methods bundled and restricted from access by others
+
+    Focus on how the object protects itself.
+
+    Data and methods are bundled and restricted for anyone to access or perform any manipulations.
+    balance is private
+    methods are public methods
+    ![alt text](attachments/encapsulate.png)
+
+    Inheritance - allows one class to reuse the properties and methods of another class. reduce duplication and promote reusability (DRY)- car is a vehicle, bus is  vehicle
+    ![alt text](attachments/inherit.png)
+    is a, has a
+
+    Polymorphism - RUN - based on a context it will do something for RUN and another context will perform another activity
+
+    same method, action, command ut behaves differently in different context. override method in the parent to perform a different action
+    ![alt text](attachments/poly.png)
+
+    Composition - compose certai things together where each component can perform a particular role independently.
+
+    music system, Engine - replace any part without changing the whole system in a car
+
+    Composition is a design principle where once class contains or is composed of one or more objects of other classes to reuse their functionality, instead of inheriting from them.
+
+    
+
+
+
+
 
 
