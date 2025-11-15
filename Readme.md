@@ -848,16 +848,17 @@ Five key OOP principles:
     Data and methods are bundled and restricted for anyone to access or perform any manipulations.
     balance is private
     methods are public methods
-    ![alt text](attachments/encapsulate.png)
+
+![alt text](attachments/encapsulate.png)
 
     Inheritance - allows one class to reuse the properties and methods of another class. reduce duplication and promote reusability (DRY)- car is a vehicle, bus is  vehicle
-    ![alt text](attachments/inherit.png)
+![alt text](attachments/inherit.png)
     is a, has a
 
     Polymorphism - RUN - based on a context it will do something for RUN and another context will perform another activity
 
     same method, action, command ut behaves differently in different context. override method in the parent to perform a different action
-    ![alt text](attachments/poly.png)
+![alt text](attachments/poly.png)
 
     Composition - compose certai things together where each component can perform a particular role independently.
 
@@ -865,7 +866,7 @@ Five key OOP principles:
 
     Composition is a design principle where once class contains or is composed of one or more objects of other classes to reuse their functionality, instead of inheriting from them.
 
-    
+![alt text](attachments/objects10.png)
 
 
 
