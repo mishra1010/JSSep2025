@@ -868,6 +868,36 @@ Five key OOP principles:
 
 ![alt text](attachments/objects10.png)
 
+# Day 30 - OOP with ES6 - code files in Day29 folder
+
+Classes was introduced in ES6 of Javscript. Before this there was no class and only way it dealt with objects was via constructor functions.
+
+What is a Class? - Blueprint, plan which is used to create objects
+
+Syntax
+
+Initialize the Object
+
+Class as Expression
+
+Class Fields
+
+Getters and Setters
+
+Static Properties
+
+Private andPublic
+
+Extending
+
+OOP with Classes
+
+# Dy 31 - Javascript Prototypes and Object Patterns
+
+
+
+
+
 
 
 
