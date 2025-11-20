@@ -894,12 +894,23 @@ OOP with Classes
 
 # Dy 31 - Javascript Prototypes and Object Patterns
 
+Once we understand object and object creation patterns, prototype automatically comes to picture.
+
+Object inside another object - Composition
+
+Prototype - base structureof the constructor object and each prototype also inherits from base or parent prototype object
+![alt text](attachments/prototype.png)
+![alt text](attachments/prototype1.png)
+
+Wheel Number in car prototype
+
+![alt text](attachments/wheelprototype.png)
+
+Wheel number can be added as a function in the prototype and not in the constructor and hence constructor and prototype would be available under prototype. How it helps is, its just part of the car prototype and not represented multiple times as part of the constructor as all cars have 4 whees as part prototype which is via reference
+
+reference in car prototype
+![alt text](attachments/retrieval.png)
 
 
-
-
-
-
-
-
-
+no reference - so undefined
+![alt text](attachments/retrieval1.png)
