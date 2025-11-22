@@ -914,3 +914,56 @@ reference in car prototype
 
 no reference - so undefined
 ![alt text](attachments/retrieval1.png)
+
+# Day 32 - JS Modules, import, export and Organize
+
+Imagine you have a gigantic js file, no one likes it. Instead you would like to have module_1.js, module_2.js and so on and use these.
+
+Import and Export
+
+named export /import - use same name in export and import file
+
+default export/import - 
+
+used in case of react, where we export only one component from a file. If multiple functions are there and multiple exports then named export/import is used. name is not an issue in case of default export/import
+
+Module Aliases
+
+If there are 2 files (modules) exporting same name, then we would need named export and aliases helps in this case.
+
+import {sum as add, sub} from './calc.js'
+
+namespace - used when we have multiple things to import
+
+import * as calc from './calc.js'
+
+calc.sum
+
+combined import and export - in case we have 10 modules
+
+create an imtermediate file then write the export statements, then import the intermediate file
+
+import * as xx from'./intermediate.js'
+
+xx.calc.sum(1,3) - in case of calc namespace
+
+else if default, we can directly access
+
+Dynamic Imports - can be used at any place in code and not only at the top
+
+const {sayHi, sayHola } = await import('./greeting.js');
+
+Load multiple modules concurrently
+
+const promises = Promise.all(
+    [await import('./greeting.js'), 
+    await import('./calc.js)
+    ]);
+
+promises returns 2 arrays here, if more imports then more arrays
+
+Tree shaking - import lot of stuff and all not being used.so its like lot of module in bundle. Removing the unused modules and only importing what is needed is called Tree Shaking.
+
+
+
+
